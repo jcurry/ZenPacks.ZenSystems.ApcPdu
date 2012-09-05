@@ -89,8 +89,14 @@ False
 <property type="boolean" id="hasSummary" mode="w" >
 True
 </property>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <tomanycont id='graphPoints'>
 <object id='bankLoad' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 LINE
 </property>
@@ -191,8 +197,14 @@ False
 <property type="boolean" id="hasSummary" mode="w" >
 True
 </property>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <tomanycont id='graphPoints'>
 <object id='outletLoad' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 LINE
 </property>
@@ -305,6 +317,12 @@ True
 </tomanycont>
 <tomanycont id='thresholds'>
 <object id='powerSupply1Thresh' module='Products.ZenModel.MinMaxThreshold' class='MinMaxThreshold'>
+<property type="string" id="eventClass" mode="w" >
+/Perf/Snmp
+</property>
+<property type="int" id="severity" mode="w" >
+5
+</property>
 <property label="DataPoints" type="lines" id="dsnames" mode="w" >
 ['powerSupply1Status_powerSupply1Status']
 </property>
@@ -317,17 +335,17 @@ True
 <property type="string" id="maxval" mode="w" >
 1
 </property>
+<property type="int" id="escalateCount" mode="w" >
+0
+</property>
+</object>
+<object id='powerSupply2Thresh' module='Products.ZenModel.MinMaxThreshold' class='MinMaxThreshold'>
 <property type="string" id="eventClass" mode="w" >
 /Perf/Snmp
 </property>
 <property type="int" id="severity" mode="w" >
 5
 </property>
-<property type="int" id="escalateCount" mode="w" >
-0
-</property>
-</object>
-<object id='powerSupply2Thresh' module='Products.ZenModel.MinMaxThreshold' class='MinMaxThreshold'>
 <property label="DataPoints" type="lines" id="dsnames" mode="w" >
 ['powerSupply2Status_powerSupply2Status']
 </property>
@@ -339,12 +357,6 @@ True
 </property>
 <property type="string" id="maxval" mode="w" >
 1
-</property>
-<property type="string" id="eventClass" mode="w" >
-/Perf/Snmp
-</property>
-<property type="int" id="severity" mode="w" >
-5
 </property>
 <property type="int" id="escalateCount" mode="w" >
 0
@@ -377,8 +389,14 @@ False
 <property type="boolean" id="hasSummary" mode="w" >
 True
 </property>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <tomanycont id='graphPoints'>
 <object id='powerSupply1Status' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 LINE
 </property>
@@ -436,6 +454,9 @@ True
 </property>
 <tomanycont id='graphPoints'>
 <object id='powerSupply2Status' module='Products.ZenModel.DataPointGraphPoint' class='DataPointGraphPoint'>
+<property type="long" id="sequence" mode="w" >
+0
+</property>
 <property select_variable="lineTypes" type="selection" id="lineType" mode="w" >
 LINE
 </property>

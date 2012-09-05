@@ -9,7 +9,7 @@ Description
 Provides support for APC PDU (Power Distribution Units) with component and performance  information for 
 Power Supplies, Outlets and Banks.
 
-This ZenPack is Zenoss 3 compliant.
+This ZenPack is Zenoss 3 and Zenoss 4 compliant.
 
 Components
 ==========
@@ -48,7 +48,7 @@ to generate performance graphs.
 Requirements & Dependencies
 ===========================
 
-    * Zenoss Versions Supported: 3.0
+    * Zenoss Versions Supported: 3.x and 4.x
     * External Dependencies: The The APC PDU MIB needs to be available on target devices.
     * ZenPack Dependencies:
     * Installation Notes: zenhub and zopectl restart after installing this ZenPack.
@@ -60,6 +60,7 @@ Download the appropriate package for your Zenoss version from the list
 below.
 
 * Zenoss 3.0+ `Latest Package for Python 2.6`_
+* Zenoss 4.0+ `Latest Package for Python 2.7`_
 
 Installation
 ============
@@ -85,7 +86,7 @@ developer mode::
 Configuration
 =============
 
-This ZenPack was tested with Zenoss 3.1 against APC AP 7952 B2 devices
+This ZenPack was tested with Zenoss 3.1 and Zenoss 4.2 against APC AP 7952 B2 devices
 
 Change History
 ==============
@@ -95,6 +96,8 @@ Change History
    * Some updates for extra debug
 * 1.2
    * Transferred to new github methods
+* 2.0
+   * Updated for Zenoss 4
 
 Screenshots
 ===========
@@ -103,7 +106,8 @@ Screenshots
 
 .. External References Below. Nothing Below This Line Should Be Rendered
 
-.. _Latest Package for Python 2.6: https://github.com/jcurry/ZenPacks.ZenSystems.ApcPdu/blob/master/dist/ZenPacks.ZenSystems.ApcPdu-1.2-py2.6.egg?raw=true
+.. _Latest Package for Python 2.6: https://github.com/downloads/jcurry/ZenPacks.ZenSystems.ApcPdu/ZenPacks.ZenSystems.ApcPdu-1.2-py2.6.egg
+.. _Latest Package for Python 2.7: https://github.com/downloads/jcurry/ZenPacks.ZenSystems.ApcPdu/ZenPacks.ZenSystems.ApcPdu-2.0-py2.7.egg
 
 .. |ApcPduComponents| image:: http://github.com/jcurry/ZenPacks.ZenSystems.ApcPdu/raw/master/screenshots/ApcPduComponents.jpg
 
